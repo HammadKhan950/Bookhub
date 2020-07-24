@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="5dp"
+    android:background="#ffffff"
+    app:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgRecyclerItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/txtRecyclerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgRecyclerItem"
+            android:padding="5dp"
+            android:text="List Item"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRecyclerAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRecyclerName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgRecyclerItem"
+            android:padding="5dp"
+            android:text="List Author"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txtRecyclerPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRecyclerAuthor"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imgRecyclerItem"
+            android:padding="5dp"
+            android:text="List Price"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtRecyclerStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:drawableLeft="@drawable/ic_star"
+            android:text="Star" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
